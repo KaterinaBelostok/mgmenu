@@ -1,0 +1,51 @@
+.menu{
+    display: flex;
+}
+
+.menu li{
+    width: 300px;
+    list-style: none;
+    background-color: grey;
+    position: relative;
+}
+
+li {
+    font-size: x-large;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.menu a {
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    height: 20px;
+    line-height: 20px ;
+    transition: all .5s;
+}
+
+.menu a:hover {
+    background-color: aquamarine;
+}
+
+.menu ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    padding: 0;
+}
+
+.menu li:hover > ul{
+    display: block;
+}
+
+.menu ul ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    padding: -10px;
+}
